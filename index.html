@@ -14,9 +14,15 @@
         
         <!-- CONTENT -->
         <div id="root">
+            
+            <button @click="aggiungi()">Aggiungi</button>
+            
             <ul>
-                <li v-for="item in array">{{item}}</li>
+                <li v-for="(item, index) in array" :key="index">{{item.response}}</li>
             </ul>
+            
+            <button @click="rimuovi()">Rimuovi</button>
+        
         </div>
 
         <!-- AXIOS -->

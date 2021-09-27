@@ -6,3 +6,23 @@
     box-sizing: border-box;
 }
 
+#root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+ul li {
+    text-align: center;
+    margin: .625rem 0rem;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    margin: .625rem;
+    font-size: 1.25rem;
+    padding: .9375rem;
+}
