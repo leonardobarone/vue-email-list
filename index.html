@@ -5,17 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vue Email List</title>
+        
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+
     </head>
     <body>
+        
         <!-- CONTENT -->
         <div id="root">
-
+            <ul>
+                <li v-for="item in array">{{item}}</li>
+            </ul>
         </div>
+
+        <!-- AXIOS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <!-- VUE -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        
         <!-- JS -->
-        <script src="js/script.js"></script>t
+        <script src="js/script.js"></script>
+
     </body>
 </html>
